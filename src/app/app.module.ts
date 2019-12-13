@@ -14,6 +14,7 @@ import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
 import { HttpClient } from 'selenium-webdriver/http';
 import { LeftbarComponent } from './leftbar/leftbar.component';
+import { ProductAddForm1Component } from './product/product-add-form1/product-add-form1.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LeftbarComponent } from './leftbar/leftbar.component';
     CategoryComponent,
     ProductComponent,
     ProductFilterPipe,
-    LeftbarComponent
+    LeftbarComponent,
+    ProductAddForm1Component
   ],
   imports: [
     BrowserModule,
