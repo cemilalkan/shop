@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -15,6 +15,7 @@ import { AlertifyService } from './services/alertify.service';
 import { HttpClient } from 'selenium-webdriver/http';
 import { LeftbarComponent } from './leftbar/leftbar.component';
 import { ProductAddForm1Component } from './product/product-add-form1/product-add-form1.component';
+import { ProductAddForm2Component } from './product/product-add-form2/product-add-form2.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,15 @@ import { ProductAddForm1Component } from './product/product-add-form1/product-ad
     ProductComponent,
     ProductFilterPipe,
     LeftbarComponent,
-    ProductAddForm1Component
+    ProductAddForm1Component,
+    ProductAddForm2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
 
   ],

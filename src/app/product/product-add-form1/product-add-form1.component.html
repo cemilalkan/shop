@@ -14,8 +14,8 @@
 
 <div class="form-group">
     <input type="text" placeholder="Ürün Resmi" #imagUrl="ngModel" 
-    [(ngModel)]="model.imagUrl" class="form-control" name="imagUrl" id="imagUrl" required>
-    <div  *ngIf="imagUrl.invalid&&imagUrl.dirty" class="alert alert-danger">Fotoğraf Gereklidir!</div>
+    [(ngModel)]="model.imageUrl" class="form-control" name="imageUrl" id="imageUrl" required>
+    <div  *ngIf="imageUrl.invalid&&imageUrl.dirty" class="alert alert-danger">Fotoğraf Gereklidir!</div>
 </div>
 
 <div class="form-group">
