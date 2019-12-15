@@ -13,9 +13,11 @@ import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
 import { HttpClient } from 'selenium-webdriver/http';
-import { LeftbarComponent } from './leftbar/leftbar.component';
 import { ProductAddForm1Component } from './product/product-add-form1/product-add-form1.component';
 import { ProductAddForm2Component } from './product/product-add-form2/product-add-form2.component';
+import { LoginComponent } from './login/login.component';
+import { AccountService } from './services/account.service';
+import { LoginGuard } from './login/login.guard';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,9 @@ import { ProductAddForm2Component } from './product/product-add-form2/product-ad
     CategoryComponent,
     ProductComponent,
     ProductFilterPipe,
-    LeftbarComponent,
     ProductAddForm1Component,
-    ProductAddForm2Component
+    ProductAddForm2Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,7 @@ import { ProductAddForm2Component } from './product/product-add-form2/product-ad
 
 
   ],
-  providers: [AlertifyService],
+  providers: [AlertifyService,AccountService,LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
